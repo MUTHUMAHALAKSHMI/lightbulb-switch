@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 50px;
+  background: #111; /* Dark by default */
+  color: white;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.room {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+.bulb-container {
+  border-radius: 50%;
+  padding: 20px;
+}
+
+img {
+  width: 200px;
+  display: block;
+}
+
+/* Wall switch style */
+.switch {
+  width: 60px;
+  height: 120px;
+  background: #ccc;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: inset 0 0 10px #0004;
+  cursor: pointer;
+}
+
+.slider {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 8px;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  transition: top 0.3s;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+/* ON (slider down) */
+.switch.on .slider {
+  top: 65px;
+  background: #28a745;
+}
+
+/* Glow effect */
+.glow {
+  box-shadow: 0 0 30px 10px yellow;
+  animation: flicker 1s infinite alternate;
+}
+
+@keyframes flicker {
+  from { box-shadow: 0 0 25px 8px yellow; }
+  to   { box-shadow: 0 0 40px 15px gold; }
+}
+
+/* Room light mode */
+.light-mode {
+  background: #fefae0;
+  color: black;
+}
+
+
+
+
+
+
+
+
